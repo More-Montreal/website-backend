@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_presentation_key_points",
+  "info": {
+    "displayName": "Key Point",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "maxLength": 500
+    }
+  }
+}
