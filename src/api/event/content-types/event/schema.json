@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "events",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Post",
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
     "description": ""
   },
   "options": {
@@ -25,19 +25,22 @@
       "type": "string",
       "required": true
     },
-    "content": {
+    "scheduledDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "richtext",
-      "required": true
-    },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "admin::user"
+      "type": "richtext"
     },
     "slug": {
       "pluginOptions": {
@@ -62,20 +65,31 @@
         }
       }
     },
-    "postCategories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post-category.post-category"
-    },
-    "excerpt": {
+    "rsvpLink": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text",
-      "required": true,
-      "maxLength": 200
+      "type": "string"
+    },
+    "inPerson": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "locationLink": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

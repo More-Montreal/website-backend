@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "actions",
   "info": {
-    "singularName": "post",
-    "pluralName": "posts",
-    "displayName": "Post",
+    "singularName": "action",
+    "pluralName": "actions",
+    "displayName": "Action",
     "description": ""
   },
   "options": {
@@ -24,20 +24,6 @@
       },
       "type": "string",
       "required": true
-    },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "admin::user"
     },
     "slug": {
       "pluginOptions": {
@@ -62,20 +48,13 @@
         }
       }
     },
-    "postCategories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post-category.post-category"
-    },
-    "excerpt": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text",
-      "required": true,
-      "maxLength": 200
+      "type": "richtext"
     }
   }
 }
