@@ -22,6 +22,18 @@
     "content": {
       "type": "richtext",
       "maxLength": 500
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "gray",
+        "blue",
+        "red",
+        "green",
+        "indigo"
+      ],
+      "default": "gray",
+      "required": true
     }
   }
 }
