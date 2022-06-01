@@ -1,57 +1,21 @@
-# 🚀 Getting started with Strapi
+# 🏗️ More MTL Website Backend
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+> This is the backend repository for the [moremtl.ca](https://moremtl.ca) website. More Montreal is a group of people advocating housing for all through rational and realistic solutions.
 
-### `develop`
+Once you are done setting up the backend, you can clone and setup the [frontend part of the website](https://github.com/More-Montreal/website-frontend).
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+## Requirements
+- Node v16 or higher LTS
+- At least 1 CPU core (Highly recommended at least 2)
+- At least 2 GB of RAM (Moderately recommended 4)
 
-```
+## Setup
+Clone the project and run the following commands:
+```sh
+npm install
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
+If you need a sample database, please ask in the `#website` channel on our [Discord community server](https://discord.com/invite/X2bsk7a2qA)
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+The admin panel should be accessible at this address: [localhost:1337/admin](localhost:1337/admin)
