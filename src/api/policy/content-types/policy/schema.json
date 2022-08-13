@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "policies",
+  "info": {
+    "singularName": "policy",
+    "pluralName": "policies",
+    "displayName": "Policy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "explanation": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "justification": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "policy_supports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::policy-support.policy-support",
+      "mappedBy": "policy"
+    },
+    "policy_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::policy-category.policy-category",
+      "inversedBy": "policies"
+    }
+  }
+}
