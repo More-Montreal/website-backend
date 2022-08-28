@@ -53,6 +53,21 @@
       "relation": "manyToOne",
       "target": "api::policy-category.policy-category",
       "inversedBy": "policies"
+    },
+    "grade": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold"
+      ],
+      "default": "bronze",
+      "required": true
     }
   }
 }
