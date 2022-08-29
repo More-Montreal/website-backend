@@ -62,6 +62,15 @@
       },
       "type": "boolean",
       "default": true
+    },
+    "internalNote": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "text",
+      "private": true
     }
   }
 }
