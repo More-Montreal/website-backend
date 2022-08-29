@@ -59,6 +59,15 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "feedbackEmail": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "email",
+      "required": true
     }
   }
 }
