@@ -68,6 +68,18 @@
       },
       "type": "email",
       "required": true
+    },
+    "seoImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
