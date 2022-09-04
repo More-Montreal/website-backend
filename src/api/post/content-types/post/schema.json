@@ -76,6 +76,19 @@
       "type": "text",
       "required": true,
       "maxLength": 200
+    },
+    "seoThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
