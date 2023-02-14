@@ -2,7 +2,7 @@
   "name": "more-mtl",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "More Montréal CMS",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -10,21 +10,21 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.11",
-    "@strapi/provider-upload-cloudinary": "^4.1.12",
-    "@strapi/strapi": "4.1.11",
-    "better-sqlite3": "7.4.6",
-    "pg": "^8.7.3",
+    "@strapi/plugin-i18n": "4.6.1",
+    "@strapi/provider-upload-cloudinary": "^4.6.1",
+    "@strapi/strapi": "4.6.1",
+    "better-sqlite3": "8.1.0",
+    "pg": "^8.9.0",
     "pg-connection-string": "^2.5.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Raphael Astier"
   },
   "strapi": {
     "uuid": "438a5b08-bee8-467c-a1f2-1e22f305c8df"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x <=19.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
