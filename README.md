@@ -5,7 +5,7 @@
 Once you are done setting up the backend, you can clone and setup the [frontend part of the website](https://github.com/More-Montreal/website-frontend).
 
 ## Requirements
-- Node v16 or higher LTS
+- Node v18 or higher LTS
 - At least 1 CPU core (Highly recommended at least 2)
 - At least 2 GB of RAM (Moderately recommended 4)
 
