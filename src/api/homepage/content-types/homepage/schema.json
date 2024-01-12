@@ -56,6 +56,16 @@
         }
       },
       "component": "presentation.key-point"
+    },
+    "electionsCallout": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }

@@ -16,5 +16,7 @@ module.exports = ({ env }) => {
                 },
             }
         }
+    } else {
+        return {};
     }
 };

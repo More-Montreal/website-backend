@@ -10,12 +10,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.6.1",
-    "@strapi/provider-upload-cloudinary": "^4.6.1",
-    "@strapi/strapi": "4.6.1",
-    "better-sqlite3": "8.1.0",
-    "pg": "^8.9.0",
-    "pg-connection-string": "^2.5.0"
+    "@strapi/plugin-i18n": "4.16.2",
+    "@strapi/provider-upload-cloudinary": "^4.16.2",
+    "@strapi/strapi": "4.16.2",
+    "better-sqlite3": "9.2.2",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
   },
   "author": {
     "name": "Raphael Astier"
@@ -24,7 +28,7 @@
     "uuid": "438a5b08-bee8-467c-a1f2-1e22f305c8df"
   },
   "engines": {
-    "node": ">=12.x.x <=19.x.x",
+    "node": ">=16.x.x <=21.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
