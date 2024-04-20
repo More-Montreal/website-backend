@@ -10,9 +10,9 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.16.2",
-    "@strapi/provider-upload-cloudinary": "^4.16.2",
-    "@strapi/strapi": "4.16.2",
+    "@strapi/plugin-i18n": "4.23.1",
+    "@strapi/provider-upload-cloudinary": "^4.23.1",
+    "@strapi/strapi": "^4.23.1",
     "better-sqlite3": "9.2.2",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.2",
