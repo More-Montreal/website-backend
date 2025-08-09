@@ -2,7 +2,7 @@ const path = require('path');
 const parsePG = require('pg-connection-string').parse;
 
 module.exports = ({ env }) => {
-    if (env('NODE_ENV') === 'development') {
+    if (env('NODE_ENV') === 'development' && env('DATABASE_URL') === undefined) {
         return {
             connection: {
                 client: 'sqlite',
