@@ -1557,6 +1557,8 @@ export interface ApiSocialSocial extends Schema.SingleType {
     facebookLink: Attribute.String;
     instagramLink: Attribute.String;
     twitterLink: Attribute.String;
+    mastodonLink: Attribute.String;
+    blueSkyLink: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

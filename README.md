@@ -12,6 +12,7 @@ Once you are done setting up the backend, you can clone and setup the [frontend 
 ## Setup
 Clone the project and run the following commands:
 ```sh
+cp .env.example .env
 npm install
 npm run develop
 ```

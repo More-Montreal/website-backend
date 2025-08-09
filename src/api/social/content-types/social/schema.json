@@ -22,6 +22,12 @@
     },
     "twitterLink": {
       "type": "string"
+    },
+    "mastodonLink": {
+      "type": "string"
+    },
+    "blueSkyLink": {
+      "type": "string"
     }
   }
 }
