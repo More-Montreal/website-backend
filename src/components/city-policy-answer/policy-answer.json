@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_city_policy_answer_policy_answers",
+  "info": {
+    "displayName": "Policy Answer",
+    "icon": "quote",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "city": {
+      "type": "enumeration",
+      "enum": [
+        "Blainville",
+        "Brossard",
+        "Châteauguay",
+        "Laval",
+        "Longueuil",
+        "Mascouche",
+        "Mirabel",
+        "Montréal",
+        "Repentigny",
+        "Saint-Jérôme",
+        "Terrebonne"
+      ],
+      "required": true
+    },
+    "politicalParty": {
+      "type": "enumeration",
+      "enum": [
+        "Action Citoyens Blainville",
+        "Vrai Blainville",
+        "Brossard Ensemble",
+        "Vision Brossard",
+        "Alliance Châteauguay",
+        "Parti Laval",
+        "Mouvement Lavallois",
+        "Action Laval",
+        "Coalition Longueuil",
+        "Agora Longueuil",
+        "Option Alliance",
+        "Vision Démocratique de Mascouche",
+        "Mouvement Citoyen Mirabel",
+        "Action Mirabel",
+        "Projet Montréal",
+        "Ensemble Montréal",
+        "Transition Montréal",
+        "Futur Montréal",
+        "Action Montréal",
+        "Repentigny Ensemble",
+        "Avenir Repentigny",
+        "Mouvement Jérômien",
+        "Avenir Saint-Jérôme",
+        "Mouvement Terrebonne"
+      ],
+      "required": true
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  }
+}
