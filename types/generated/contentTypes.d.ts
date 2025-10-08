@@ -705,6 +705,134 @@ export interface ApiActionAction extends Schema.CollectionType {
   };
 }
 
+export interface ApiCityPoliciesPageCityPoliciesPage extends Schema.SingleType {
+  collectionName: 'city_policies_pages';
+  info: {
+    singularName: 'city-policies-page';
+    pluralName: 'city-policies-pages';
+    displayName: 'City Policies Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    heroTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    heroDescription: Attribute.Text &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cityPolicyQuestions: Attribute.Relation<
+      'api::city-policies-page.city-policies-page',
+      'oneToMany',
+      'api::city-policy-question.city-policy-question'
+    >;
+    heroBackground: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    seoImage: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::city-policies-page.city-policies-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::city-policies-page.city-policies-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::city-policies-page.city-policies-page',
+      'oneToMany',
+      'api::city-policies-page.city-policies-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiCityPolicyQuestionCityPolicyQuestion
+  extends Schema.CollectionType {
+  collectionName: 'city_policy_questions';
+  info: {
+    singularName: 'city-policy-question';
+    pluralName: 'city-policy-questions';
+    displayName: 'City Policy Question';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    question: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    answers: Attribute.Component<'city-policy-answer.policy-answer', true> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::city-policy-question.city-policy-question',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::city-policy-question.city-policy-question',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::city-policy-question.city-policy-question',
+      'oneToMany',
+      'api::city-policy-question.city-policy-question'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiContactContact extends Schema.SingleType {
   collectionName: 'contacts';
   info: {
@@ -1592,6 +1720,8 @@ declare module '@strapi/types' {
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::action.action': ApiActionAction;
+      'api::city-policies-page.city-policies-page': ApiCityPoliciesPageCityPoliciesPage;
+      'api::city-policy-question.city-policy-question': ApiCityPolicyQuestionCityPolicyQuestion;
       'api::contact.contact': ApiContactContact;
       'api::event.event': ApiEventEvent;
       'api::homepage.homepage': ApiHomepageHomepage;
