@@ -22,7 +22,7 @@
           "localized": true
         }
       },
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "answers": {

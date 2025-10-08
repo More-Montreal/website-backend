@@ -795,7 +795,7 @@ export interface ApiCityPolicyQuestionCityPolicyQuestion
     };
   };
   attributes: {
-    question: Attribute.String &
+    question: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
