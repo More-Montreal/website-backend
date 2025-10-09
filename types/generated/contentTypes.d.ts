@@ -753,6 +753,12 @@ export interface ApiCityPoliciesPageCityPoliciesPage extends Schema.SingleType {
           localized: true;
         };
       }>;
+    footerInfo: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -809,6 +815,20 @@ export interface ApiCityPolicyQuestionCityPolicyQuestion
           localized: true;
         };
       }>;
+    displayOutsideMontreal: Attribute.Boolean &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<true>;
+    displayForMontreal: Attribute.Boolean &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

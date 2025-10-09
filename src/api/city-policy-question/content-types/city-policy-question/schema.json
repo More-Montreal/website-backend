@@ -36,6 +36,25 @@
       },
       "component": "city-policy-answer.policy-answer",
       "required": true
+    },
+    "displayOutsideMontreal": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "displayForMontreal": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true,
+      "required": false
     }
   }
 }
